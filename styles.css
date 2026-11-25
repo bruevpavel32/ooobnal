@@ -1,0 +1,89 @@
+/* NovaPlay, layout based on variant 1 */
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+body { margin: 0; color: #eceaff; background: #15132e linear-gradient(160deg, #2b2570 0%, #15132e 55%, #3a1f4a 100%) fixed; font: 16px/1.6 "Segoe UI", Roboto, Arial, sans-serif; }
+img { max-width: 100%; height: auto; display: block; }
+.card img { width: 100%; }
+h1, h2 { font-family: "Trebuchet MS", sans-serif; line-height: 1.25; }
+h1 { font-size: 30px; margin: 28px 0 12px; }
+ul { margin: 0; padding: 0; list-style: none; }
+
+a:link { color: #ffb62e; }
+a:visited { color: #e0b6ff; }
+a:hover { color: #3ee6b0; text-decoration: underline; }
+a:active { color: #ff6b8b; }
+a:focus { outline: 3px solid #3ee6b0; outline-offset: 2px; }
+
+.container { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+.site-header { background: rgba(10, 8, 30, 0.85); border-bottom: 2px solid #ffb62e; }
+.header-inner { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-align: center; align-items: center; -ms-flex-pack: justify; justify-content: space-between; padding-top: 12px; padding-bottom: 12px; }
+.logo { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; font: bold 24px "Trebuchet MS", sans-serif; text-decoration: none; }
+.logo:link, .logo:visited { color: #fff; }
+.logo img { margin-right: 10px; }
+.main-menu li { display: inline-block; margin-left: 18px; }
+.main-menu a { text-decoration: none; padding: 4px 0; border-bottom: 2px solid transparent; }
+.main-menu a:link, .main-menu a:visited { color: #eceaff; }
+.main-menu a:hover, .main-menu a.current { color: #ffb62e; border-bottom-color: #ffb62e; }
+
+.intro { text-align: center; padding: 20px 0 10px; }
+.intro p { color: #cfcaf5; max-width: 620px; margin: 0 auto 16px; font-style: italic; }
+.icon-links li { display: inline-block; margin: 0 5px; }
+.icon-links a { display: block; width: 36px; height: 36px; line-height: 36px; border-radius: 50%; background: #ffb62e; text-decoration: none; }
+.icon-links a:link, .icon-links a:visited { color: #15132e; }
+.icon-links a:hover { background: #3ee6b0; color: #15132e; }
+
+.masonry { -webkit-column-count: 2; -moz-column-count: 2; column-count: 2; -webkit-column-gap: 24px; -moz-column-gap: 24px; column-gap: 24px; margin: 24px 0; }
+.card { display: inline-block; width: 100%; margin: 0 0 24px; background: rgba(12, 10, 34, 0.82); border: 1px solid #37337a; border-radius: 4px; overflow: hidden; -webkit-column-break-inside: avoid; page-break-inside: avoid; break-inside: avoid; }
+.card-body { padding: 14px 16px 12px; }
+.card-title { font-size: 18px; margin: 0 0 6px; }
+.card p { margin: 0 0 10px; color: #cfcaf5; font-size: 15px; }
+.card-meta { border-top: 1px solid #37337a; padding-top: 8px; font-size: 13px; color: #9f9acd; }
+.card-meta span { margin-right: 14px; }
+.card-text blockquote { margin: 0 0 10px; font-style: italic; font-size: 17px; }
+.news-list li { margin-bottom: 8px; font-size: 15px; }
+[hidden] { display: none; }
+
+.button { display: inline-block; padding: 9px 22px; border: 0; border-radius: 4px; background: #ffb62e; font: bold 16px "Segoe UI", Arial, sans-serif; text-decoration: none; cursor: pointer; }
+.button:link, .button:visited, .button { color: #15132e; }
+.button:hover { background: #3ee6b0; color: #15132e; text-decoration: none; }
+.more { text-align: center; }
+
+.filters { margin-bottom: 20px; }
+.filters input, .filters select, .contact-form input, .contact-form textarea { padding: 9px 12px; color: #eceaff; background: rgba(12, 10, 34, 0.9); border: 1px solid #37337a; border-radius: 4px; font: inherit; }
+.filters input { margin-right: 10px; }
+
+.table-wrap { overflow-x: auto; }
+.bonus-table { width: 100%; min-width: 520px; border-collapse: collapse; background: rgba(12, 10, 34, 0.82); }
+.bonus-table th, .bonus-table td { border: 1px solid #37337a; padding: 10px 12px; text-align: left; }
+.bonus-table thead th { background: #37337a; }
+.cell-welcome { background: #0f5c47; }
+.cell-spins { background: #5a2b8a; }
+.cell-cashback { background: #7a5200; }
+.cell-level { background: #1c4a7a; }
+
+.facts { overflow: hidden; margin: 24px 0; }
+.facts div { float: left; width: 25%; padding: 14px; text-align: center; background: rgba(12, 10, 34, 0.82); border: 1px solid #37337a; }
+.facts dt { color: #9f9acd; font-size: 14px; }
+.facts dd { margin: 0; font: bold 28px "Trebuchet MS", sans-serif; color: #ffb62e; }
+address { font-style: normal; margin-bottom: 20px; }
+
+.contact-form { max-width: 520px; margin-bottom: 24px; }
+.contact-form label { display: block; margin: 12px 0 4px; }
+.contact-form input, .contact-form textarea { display: block; width: 100%; }
+.contact-form .button { margin-top: 16px; }
+.map { display: block; width: 100%; height: 320px; border: 2px solid #37337a; border-radius: 4px; }
+
+.site-footer { margin-top: 40px; padding: 24px 0 14px; background: rgba(10, 8, 30, 0.9); border-top: 1px solid #37337a; font-size: 14px; color: #b4b0dc; }
+.footer-columns { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; margin: 0 auto; }
+.footer-col { -ms-flex: 1 1 200px; flex: 1 1 200px; padding-right: 20px; }
+.footer-col h2 { font-size: 16px; color: #fff; margin: 0 0 8px; }
+.footer-col li { margin-bottom: 6px; }
+.copyright { margin-top: 16px; text-align: center; }
+
+@media (max-width: 700px) {
+	.masonry { -webkit-column-count: 1; -moz-column-count: 1; column-count: 1; }
+	.main-menu li { margin: 0 14px 0 0; }
+	.header-inner nav { margin-top: 8px; }
+	.facts div { width: 50%; }
+}

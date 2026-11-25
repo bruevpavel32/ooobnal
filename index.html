@@ -1,17 +1,113 @@
 <!DOCTYPE html>
-<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Главная — NovaPlay</title><meta name="description" content="NovaPlay — онлайн-игры на виртуальные монеты, без реальных денег.">
-<link rel="stylesheet" href="style.css"></head><body>
-<header><div class="wrap"><a class="logo" href="index.html"><i>N</i>NovaPlay</a><nav><a href="index.html" class=on>Главная</a><a href="games.html">Игры</a><a href="bonuses.html">Бонусы</a><a href="responsible.html">Ответственная игра</a><a href="about.html">О платформе</a><a href="contacts.html">Контакты</a></nav></div></header>
-<main class="wrap"><section class="hero"><div><h1>Играйте ради удовольствия, а не ради денег</h1><p>NovaPlay — платформа с игровыми слотами, настольными играми, лото и мгновенными играми. Все игры идут на виртуальные монеты: реальных денег нет, вывода тоже.</p><a class="btn" href="games.html">Открыть игровой зал</a></div>
-<div><div class="slider" aria-label="Популярные игры"><div class="slide s1 on"><span class="ic">🌙</span><b>Лунный джекпот</b><span>Слот с каскадными выигрышами</span></div><div class="slide s2"><span class="ic">🃏</span><b>Блэкджек Классик</b><span>Играйте против дилера, RTP 99,1%</span></div><div class="slide s3"><span class="ic">🎁</span><b>Приветственный бонус</b><span>1000 монет и 20 фриспинов при регистрации</span></div></div>
-<div class="dots"><button class="on" aria-label="Слайд 1"></button><button aria-label="Слайд 2"></button><button aria-label="Слайд 3"></button></div></div></section>
-<h2>Разделы игрового зала</h2><div class="grid">
-<article class="card"><div class="pic" style="background:linear-gradient(135deg,#8a5a00,#ffb62e)">🎰</div><div class="body"><h3>Слоты</h3><p>Классические и видеослоты с бонусными раундами.</p><a href="games.html">Смотреть слоты</a></div></article>
-<article class="card"><div class="pic" style="background:linear-gradient(135deg,#0a5c45,#1fd1a0)">♠️</div><div class="body"><h3>Настольные игры</h3><p>Блэкджек, рулетка и другие карточные игры.</p><a href="games.html">Смотреть столы</a></div></article>
-<article class="card"><div class="pic" style="background:linear-gradient(135deg,#1c4a7a,#6db7ff)">🎱</div><div class="body"><h3>Лото и мгновенные игры</h3><p>Быстрые раунды на пару минут.</p><a href="games.html">Смотреть игры</a></div></article></div>
-<h2>Новые игры</h2><div class="grid"><article class="card" data-cat="instant" data-name="Ракета-X"><div class="pic" style="background:linear-gradient(135deg,#a33b00,#ff9a3e)">🚀</div><div class="body"><h3>Ракета-X</h3><dl class="spec"><dt>Категория</dt><dd>Мгновенные</dd><dt>Провайдер</dt><dd>QuickSpin</dd><dt>Ставка</dt><dd>1–300 монет</dd><dt>RTP</dt><dd>97.0%</dd></dl></div></article><article class="card" data-cat="lotto" data-name="Лото 6 из 36"><div class="pic" style="background:linear-gradient(135deg,#1c4a7a,#6db7ff)">🎱</div><div class="body"><h3>Лото 6 из 36</h3><dl class="spec"><dt>Категория</dt><dd>Лото</dd><dt>Провайдер</dt><dd>LuckyBalls</dd><dt>Ставка</dt><dd>1–100 монет</dd><dt>RTP</dt><dd>94.0%</dd></dl></div></article><article class="card" data-cat="slots" data-name="Лунный джекпот"><div class="pic" style="background:linear-gradient(135deg,#2b2a7a,#7b2ff7)">🌙</div><div class="body"><h3>Лунный джекпот</h3><dl class="spec"><dt>Категория</dt><dd>Слоты</dd><dt>Провайдер</dt><dd>StarForge</dd><dt>Ставка</dt><dd>2–1000 монет</dd><dt>RTP</dt><dd>95.8%</dd></dl></div></article></div>
-<div class="news"><h3>Новости</h3><p><b>20.11.2026.</b> В зале появились мгновенные игры от QuickSpin.</p><p><b>12.11.2026.</b> Запущена программа лояльности с тремя уровнями.</p></div>
-<div class="pn"><span></span><a href="games.html">Игры →</a></div></main>
-<footer><div class="wrap"><div><a href="index.html">Главная</a><a href="games.html">Игры</a><a href="bonuses.html">Бонусы</a><a href="responsible.html">Ответственная игра</a><a href="about.html">О платформе</a><a href="contacts.html">Контакты</a></div><div>© 2026 NovaPlay · Обновлено: 26.11.2026 · Только для пользователей 14+ · Игры на виртуальную валюту, вывод средств невозможен</div></div></footer>
-<script src="script.js"></script></body></html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Главная — NovaPlay</title>
+	<meta name="description" content="NovaPlay — онлайн-игры на виртуальные монеты без реальных денег.">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="logo" href="index.html"><img src="images/logo.svg" alt="" width="36" height="36">NovaPlay</a>
+			<nav>
+				<ul class="main-menu">
+				<li><a href="index.html" class="current">Главная</a></li>
+				<li><a href="games.html">Игры</a></li>
+				<li><a href="bonuses.html">Бонусы</a></li>
+				<li><a href="responsible.html">Ответственная игра</a></li>
+				<li><a href="about.html">О платформе</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main class="container">
+		<section class="intro">
+			<h1>Играйте ради удовольствия, а не ради денег</h1>
+			<p>Слоты, настольные игры, лото и мгновенные игры. Все игры идут на виртуальные монеты, вывода средств нет.</p>
+			<ul class="icon-links"><li><a href="games.html" title="Слоты">🎰</a></li><li><a href="games.html" title="Настольные игры">♠</a></li><li><a href="games.html" title="Лото">🎱</a></li><li><a href="games.html" title="Мгновенные игры">🚀</a></li></ul>
+		</section>
+		<section class="masonry">
+			<article class="card" data-category="slots" data-name="Лунный джекпот">
+				<img src="images/game-moon.svg" alt="Полумесяц на фиолетовом фоне" width="400" height="220">
+				<div class="card-body">
+					<h2 class="card-title">Лунный джекпот</h2>
+					<p>Каскадные выигрыши и накопительный лунный джекпот.</p>
+					<div class="card-meta"><span>StarForge</span><span>2–1000 монет</span><span>RTP 95,8%</span></div>
+				</div>
+			</article>
+			<article class="card" data-category="slots" data-name="Золотой скарабей">
+				<img src="images/game-scarab.svg" alt="Золотой жук на тёмно-жёлтом фоне" width="400" height="220">
+				<div class="card-body">
+					<h2 class="card-title">Золотой скарабей</h2>
+					<p>Египетский слот с растущими множителями и бонусными раундами.</p>
+					<div class="card-meta"><span>PharaohLab</span><span>1–500 монет</span><span>RTP 96,2%</span></div>
+				</div>
+			</article>
+			<article class="card card-text">
+				<div class="card-body">
+					<h2 class="card-title">Новости платформы</h2>
+					<ul class="news-list">
+						<li><strong>20.11.2026.</strong> В зале появились мгновенные игры от QuickSpin.</li>
+						<li><strong>12.11.2026.</strong> Запущена программа лояльности с тремя уровнями.</li>
+					</ul>
+				</div>
+			</article>
+			<article class="card" data-category="table" data-name="Блэкджек Классик">
+				<img src="images/game-blackjack.svg" alt="Игральная карта на зелёном фоне" width="400" height="220">
+				<div class="card-body">
+					<h2 class="card-title">Блэкджек Классик</h2>
+					<p>Классическая игра против дилера с самым высоким RTP в зале.</p>
+					<div class="card-meta"><span>CardHouse</span><span>10–2000 монет</span><span>RTP 99,1%</span></div>
+				</div>
+			</article>
+			<article class="card card-text">
+				<div class="card-body">
+					<blockquote>Пять минут игры, потом пауза. Так игра остаётся развлечением.</blockquote>
+					<p><a href="responsible.html">Как установить лимиты</a></p>
+				</div>
+			</article>
+			<article class="card" data-category="instant" data-name="Ракета-X">
+				<img src="images/game-rocket.svg" alt="Ракета на оранжевом фоне" width="400" height="220">
+				<div class="card-body">
+					<h2 class="card-title">Ракета-X</h2>
+					<p>Заберите множитель вовремя, пока ракета не улетела.</p>
+					<div class="card-meta"><span>QuickSpin</span><span>1–300 монет</span><span>RTP 97,0%</span></div>
+				</div>
+			</article>
+		</section>
+		<p class="more"><a class="button" href="games.html">Все игры</a></p>
+	</main>
+	<footer class="site-footer">
+		<div class="container footer-columns">
+			<section class="footer-col">
+				<h2>Популярные игры</h2>
+				<ul>
+					<li><a href="games.html">Золотой скарабей</a></li>
+					<li><a href="games.html">Блэкджек Классик</a></li>
+					<li><a href="games.html">Ракета-X</a></li>
+				</ul>
+			</section>
+			<section class="footer-col">
+				<h2>Новости</h2>
+				<ul>
+					<li>20.11.2026 — мгновенные игры QuickSpin</li>
+					<li>12.11.2026 — три уровня лояльности</li>
+				</ul>
+			</section>
+			<section class="footer-col">
+				<h2>О платформе</h2>
+				<p>Игры только на виртуальные монеты. Вывода средств нет, возраст 14+.</p>
+			</section>
+			<section class="footer-col">
+				<h2>Ответственная игра</h2>
+				<p>Установите лимиты или возьмите паузу. <a href="responsible.html">Подробнее</a></p>
+			</section>
+		</div>
+		<p class="container copyright">© 2026 NovaPlay. Обновлено: 26.11.2026</p>
+	</footer>
+	<script src="js/main.js"></script>
+</body>
+</html>

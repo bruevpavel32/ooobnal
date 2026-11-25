@@ -1,11 +1,69 @@
 <!DOCTYPE html>
-<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Контакты — NovaPlay</title><meta name="description" content="NovaPlay — онлайн-игры на виртуальные монеты, без реальных денег.">
-<link rel="stylesheet" href="style.css"></head><body>
-<header><div class="wrap"><a class="logo" href="index.html"><i>N</i>NovaPlay</a><nav><a href="index.html">Главная</a><a href="games.html">Игры</a><a href="bonuses.html">Бонусы</a><a href="responsible.html">Ответственная игра</a><a href="about.html">О платформе</a><a href="contacts.html" class=on>Контакты</a></nav></div></header>
-<main class="wrap"><h1>Контакты</h1><p>Напишите нам, и мы ответим на почту в течение двух рабочих дней.</p>
-<form action="#" onsubmit="return false"><label>Имя<input required name="name"></label><label>Почта<input required type="email" name="email"></label><label>Сообщение<textarea required rows="4" name="msg"></textarea></label><button class="btn" type="submit">Отправить сообщение</button></form>
-<h2>Как нас найти</h2><iframe title="Карта проезда" loading="lazy" src="https://yandex.ru/map-widget/v1/?ll=34.3634%2C53.2434&z=14&pt=34.3634%2C53.2434%2Cpm2rdm"></iframe>
-<div class="pn"><a href="about.html">← О платформе</a><span></span></div></main>
-<footer><div class="wrap"><div><a href="index.html">Главная</a><a href="games.html">Игры</a><a href="bonuses.html">Бонусы</a><a href="responsible.html">Ответственная игра</a><a href="about.html">О платформе</a><a href="contacts.html">Контакты</a></div><div>© 2026 NovaPlay · Обновлено: 26.11.2026 · Только для пользователей 14+ · Игры на виртуальную валюту, вывод средств невозможен</div></div></footer>
-<script src="script.js"></script></body></html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Контакты — NovaPlay</title>
+	<meta name="description" content="NovaPlay — онлайн-игры на виртуальные монеты без реальных денег.">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="logo" href="index.html"><img src="images/logo.svg" alt="" width="36" height="36">NovaPlay</a>
+			<nav>
+				<ul class="main-menu">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="games.html">Игры</a></li>
+				<li><a href="bonuses.html">Бонусы</a></li>
+				<li><a href="responsible.html">Ответственная игра</a></li>
+				<li><a href="about.html">О платформе</a></li>
+				<li><a href="contacts.html" class="current">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main class="container">
+		<h1>Контакты</h1>
+		<form id="contact-form" class="contact-form" action="#">
+			<label for="name">Имя</label>
+			<input id="name" name="name" required>
+			<label for="email">Почта</label>
+			<input id="email" name="email" type="email" required>
+			<label for="message">Сообщение</label>
+			<textarea id="message" name="message" rows="4" required></textarea>
+			<button class="button" type="submit">Отправить сообщение</button>
+		</form>
+		<iframe class="map" title="Карта проезда" loading="lazy" src="https://yandex.ru/map-widget/v1/?ll=34.3634%2C53.2434&amp;z=14&amp;pt=34.3634%2C53.2434%2Cpm2rdm"></iframe>
+	</main>
+	<footer class="site-footer">
+		<div class="container footer-columns">
+			<section class="footer-col">
+				<h2>Популярные игры</h2>
+				<ul>
+					<li><a href="games.html">Золотой скарабей</a></li>
+					<li><a href="games.html">Блэкджек Классик</a></li>
+					<li><a href="games.html">Ракета-X</a></li>
+				</ul>
+			</section>
+			<section class="footer-col">
+				<h2>Новости</h2>
+				<ul>
+					<li>20.11.2026 — мгновенные игры QuickSpin</li>
+					<li>12.11.2026 — три уровня лояльности</li>
+				</ul>
+			</section>
+			<section class="footer-col">
+				<h2>О платформе</h2>
+				<p>Игры только на виртуальные монеты. Вывода средств нет, возраст 14+.</p>
+			</section>
+			<section class="footer-col">
+				<h2>Ответственная игра</h2>
+				<p>Установите лимиты или возьмите паузу. <a href="responsible.html">Подробнее</a></p>
+			</section>
+		</div>
+		<p class="container copyright">© 2026 NovaPlay. Обновлено: 26.11.2026</p>
+	</footer>
+	<script src="js/main.js"></script>
+</body>
+</html>
