@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Игры — NovaPlay</title>
+	<meta name="description" content="NovaPlay — онлайн-игры на виртуальные монеты без реальных денег.">
+	<link rel="stylesheet" href="styles.css">
+	<link id="view-style" rel="stylesheet" href="css/view-default.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="logo" href="index.html"><img src="images/logo.svg" alt="" width="36" height="36">NovaPlay</a>
+			<nav>
+				<ul class="main-menu">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="games.html" class="current">Игры</a></li>
+				<li><a href="bonuses.html">Бонусы</a></li>
+				<li><a href="responsible.html">Ответственная игра</a></li>
+				<li><a href="about.html">О платформе</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main class="container">
+		<h1>Игровой зал</h1>
+		<div class="view-switcher" role="group" aria-label="Версия страницы">
+			<span>Версия страницы:</span>
+			<button type="button" class="button button-small" data-view="default" aria-pressed="true">Обычная</button>
+			<button type="button" class="button button-small" data-view="print" aria-pressed="false">Для печати</button>
+			<button type="button" class="button button-small" data-view="contrast" aria-pressed="false">Для слабовидящих</button>
+		</div>
+		<div class="catalog">
+			<aside id="filters" class="filters-panel" aria-label="Фильтры"></aside>
+			<section class="results">
+				<p id="result-count" class="result-count" aria-live="polite"></p>
+				<div id="games-list" class="masonry"></div>
+			</section>
+		</div>
+		<noscript><p>Для работы фильтра нужен JavaScript.</p></noscript>
+	</main>
+	<footer class="site-footer">
+		<div class="container footer-columns">
+			<section class="footer-col">
+				<h2>Популярные игры</h2>
+				<ul>
+					<li><a href="games.html">Золотой скарабей</a></li>
+					<li><a href="games.html">Блэкджек Классик</a></li>
+					<li><a href="games.html">Ракета-X</a></li>
+				</ul>
+			</section>
+			<section class="footer-col">
+				<h2>Новости</h2>
+				<ul>
+					<li>20.11.2026 — мгновенные игры QuickSpin</li>
+					<li>12.11.2026 — три уровня лояльности</li>
+				</ul>
+			</section>
+			<section class="footer-col">
+				<h2>О платформе</h2>
+				<p>Игры только на виртуальные монеты. Вывода средств нет, возраст 14+.</p>
+			</section>
+			<section class="footer-col">
+				<h2>Ответственная игра</h2>
+				<p>Установите лимиты или возьмите паузу. <a href="responsible.html">Подробнее</a></p>
+			</section>
+		</div>
+		<p class="container copyright">© 2026 NovaPlay. Обновлено: 26.11.2026</p>
+	</footer>
+	<script src="js/games-data.js"></script>
+	<script src="js/filter.js"></script>
+	<script src="js/view-switcher.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

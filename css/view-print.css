@@ -1,0 +1,16 @@
+/* Print view: only significant content, black on white */
+body { color: #000; background: #fff; font: 12pt/1.4 "Times New Roman", Times, serif; }
+a:link, a:visited { color: #000; }
+.site-header, .site-footer, .filters-panel, .card img { display: none; }
+.catalog { display: block; }
+.results { width: 100%; }
+.results .masonry { display: block; margin: 0; }
+.results .card { margin: 0; }
+.card { background: none; border: 0; border-bottom: 1px solid #000; border-radius: 0; margin: 0; }
+.card-body { padding: 6px 0; }
+.card-title { font-size: 14pt; margin: 0; }
+.card p, .card-meta { color: #000; font-size: 11pt; margin: 0; border: 0; padding: 0; }
+.view-switcher, .result-count { color: #000; }
+.view-switcher button { color: #000; background: #fff; border: 1px solid #000; }
+.view-switcher button[aria-pressed="true"] { background: #000; color: #fff; }
+@media print { .view-switcher { display: none; } }

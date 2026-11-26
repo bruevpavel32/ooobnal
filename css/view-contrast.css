@@ -1,0 +1,20 @@
+/* Low-vision view: large text, yellow on black */
+body { color: #ffe600; background: #000; font-size: 22px; line-height: 1.7; }
+a:link, a:visited { color: #fff; text-decoration: underline; }
+a:hover, a:active { color: #ffe600; }
+.site-header, .site-footer { background: #000; border-color: #ffe600; }
+.main-menu a:link, .main-menu a:visited, .logo:link, .logo:visited { color: #ffe600; }
+.card, .filters-panel { background: #000; border: 3px solid #ffe600; border-radius: 0; }
+.filter-group { border: 0; }
+.filter-group legend, .filter-search label { color: #ffe600; font-size: 22px; }
+.filter-option { font-size: 20px; padding: 4px 0; }
+.card-title { font-size: 26px; }
+.card-meta { border-top: 2px solid #ffe600; }
+.card img { display: none; }
+.results .masonry { display: block; }
+.results .card { margin-bottom: 18px; }
+.card p, .card-meta, .filter-count, .result-count { color: #ffe600; font-size: 20px; }
+.filters-panel input, .filters-panel button { font-size: 20px; color: #ffe600; background: #000; border: 3px solid #ffe600; }
+.filter-option input { width: 22px; height: 22px; }
+.button, .view-switcher button { color: #000; background: #ffe600; border: 3px solid #fff; font-size: 20px; }
+.view-switcher button[aria-pressed="true"] { background: #fff; }
